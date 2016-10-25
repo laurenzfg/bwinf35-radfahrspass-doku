@@ -1,0 +1,27 @@
+Der Compilierungsbefehl lautet:
+
+\shellcmd{g++ fahrradfahrer.cpp fahrradfahrer.h main.cpp -o fahrspass.out}
+
+Von den Parcours ließen sich vier und neun befahren. Die Anderen waren nicht befahrbar. Von dieser Aussage sind die Parcours A, B und C ausgenommen.
+Das Programm benötigt für den Parcour 9 ca. 21 Sekunden. Für die anderen Beispiele entsprechend weniger (Laufzeitkomplexität: O(n)).
+\subsection{Parcour 4}
+	Programmausgabe:\\
+	\shellout{  \$ ./fahrspass.out \\
+				Datei : parcours4.txt\\
+				Die Strecke lässt sich befahren. Man muss am Anfang 1001577 mal Beschleunigungen.\\
+				Endgeschwindigkeit : 0
+}
+\subsection{Parcour 6}
+	Programmausgabe:\\
+	\shellout{  \$ ./fahrspass.out \\
+				Datei : parcours6.txt \\
+				Die Strecke lässt sich nicht befahren.
+}
+\subsection{Parcour 9}
+	Programmausgabe:\\
+	\shellout{ \$ ./fahrspass.out \\
+				Datei : parcours9.txt \\
+				Die Strecke lässt sich befahren. Man muss am Anfang 49992957 mal Beschleunigungen. \\
+				Endgeschwindigkeit : 0 \\
+}
+
