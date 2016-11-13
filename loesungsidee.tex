@@ -1,16 +1,16 @@
 \subsection {Lösungsidee}
 	Die Strecke wird mit einer theoretisch minimalen Geschwindigkeit und einer theoretisch maximalen Geschwindigkeit befahren. 
 	Für die maximale Geschwindigkeit wird auf jedem geraden Streckenabschnitt beschleunigt, für die minimale Geschwindikeit auf
-	jedem geraden Streckenabschnitt gebremst. Wird die minimale Geschwindigkeit kleiner als 0, wird diese unter der Bedingung, 
-	dass die Strecke an diesem Punkt mit der maximalen Geschwindikeit noch befahren werden kann, um 2 erhöht. 
+	jedem geraden Streckenabschnitt gebremst. Wird die minimale Geschwindigkeit kleiner als 0, wird diese unter der Bedingung um 2 erhöht, 
+	dass die Strecke an diesem Punkt mit der maximalen Geschwindigkeit noch befahren werden kann. 
 	Diese Erhöhung entspricht der Umwandlung von einmal Abbremsen in einmal Beschleunigen.
 	
 	Eine Strecke lässt sich dann unter folgenden Bedingungen befahren:\newline
 	1. Man kommt mit der maximalen Geschwindigkeit bis ins Ziel.\newline
-	2. Man hat mit der minimalen Geschindigkeit im Ziel die Geschwindikeit 0.
+	2. Man hat mit der minimalen Geschwindigkeit im Ziel die Geschwindigkeit 0.
 
-	Während dieses ersten Teils, dem Ablaufen der Strecke, muss sich der Fahrradfahrer neben den Geschwindikeit zusätzlich noch
+	Während dieses ersten Teils - dem Ablaufen der Strecke - muss sich der Fahrradfahrer neben den Geschwindikeiten zusätzlich noch
 	eine weiter Größe merken: Die Anzahl der Unterschreitungen der Geschwindigkeit 0. Die Anzahl dieser Unterschreitungen enspricht
-	der zu Beginn nötigen Beschleunigungen auf den geraden Streckenabschnitten beim Befahren der Strecke. Die restlichen geraden Streckenabschnitte muss abgebremst werden.
+	der zu Beginn nötigen Beschleunigungen auf den geraden Streckenabschnitten beim Befahren der Strecke. Die restlichen geraden Streckenabschnitte müssen abgebremst werden.
 \subsection{Laufzeit}
-	Die Laufzeit ist allein abhängig von der Länge n der Strecke, da für jeden Streckenabschnitt die gleichen Operationen ausgeführt werden müssen. Lauzeitkomplexität: \(O(n)\)
+	Die Laufzeit ist allein abhängig von der Länge n der Strecke, da für jeden Streckenabschnitt die gleichen Operationen ausgeführt werden müssen. Laufzeitkomplexität: \(O(n)\)
