@@ -1,10 +1,8 @@
-
 	Zur Umsetzung nutzen wir die Klasse Fahrradfahrer.
-	Diese Klasse hat die Funktionen \texttt{ablaufen()} und \texttt{fahren()}.
-	In der Funktion \texttt{ablaufen()} ist dabei die komplette Logik zum Entscheiden, ob eine Strecke befahrbar ist und die 
-	zur Berechnung der nötigen Beschleunigungen, implementiert. 
-	Dabei werden die Anzahl der nötigen Beschleunigungen in der Variable \texttt{Beschleunigungen} gespeichert.
-	In \texttt{fahren()} wird das Ergebnis aus \texttt{ablaufen()} nochmals überprüft und die Anweisungen für die geraden Streckenabschnitte werden ausgegeben. 
-	Theoretisch ist das Aufrufen der Funktion \texttt{fahren()} aber redundant: Es werden keine neuen Erkenntnisse gewonnen. 
-	Ob und wie eine Strecke befahren werden kann, stellt \texttt{ablaufen()} allein fest.
 	
+	Diese Klasse hat die Funktionen \texttt{ablaufen()} und \texttt{fahren()}.
+	Die Funktion \texttt{ablaufen()} spiegelt den "`Icandothat-Poker"' wieder, bei dem entschieden wird, ob eine Strecke befahrbar ist. Die Anzahl der nötigen Beschleunigungen wird wie in der Lösungsidee dargestellt berechnet. Diese Anzahl wird in der Variablen \texttt{Beschleunigungen} gespeichert.
+
+	Die Funktion \texttt{fahren()} entspricht dem eigentlichen Abfahren: Hier wird das Ergebnis aus \texttt{ablaufen()} getestet. Außerdem werden die Anweisungen für die geraden Streckenabschnitte im gewünschten Ausgabeformat in die Datei "`prot.txt"' geschrieben. 
+
+	Allerdings ist das Aufrufen der Funktion \texttt{fahren()} für die Aufgabenbearbeitung nicht zwingend erforderlich: Es werden keine neuen Erkenntnisse gewonnen, die Anzahl der Anfangs nötigen Beschleunigungen ist vorher bekannt.  Ob und wie eine Strecke befahren werden kann, stellt \texttt{ablaufen()} allein fest. Somit dient \texttt{fahren()} nur der Überprüfung und der Ausgabe.
