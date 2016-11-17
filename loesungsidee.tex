@@ -7,7 +7,7 @@
 	
 	Eine Strecke lässt sich befahren, wenn folgende Bedingungen gegeben sind:
 	\begin{enumerate}
-		\item Man erreicht mit der maximalen Geschwindigkeit das Ziel.
+		\item Man erreicht mit der maximalen Geschwindigkeit überhaupt das Ziel.
 		\item Man erreicht mit der minimal nötigen Geschwindigkeit das Ziel mit der Geschwindigkeit 0.
 	\end{enumerate}
 
@@ -15,4 +15,10 @@
 	eine weitere Größe merken: Die Anzahl der Umwandlungen von Brems- in Beschleunigungsvorgänge. Die Anzahl dieser Umwandlungen entspricht
 	den zu Beginn nötigen Beschleunigungen auf geraden Streckenabschnitten. Auf den restlichen geraden Streckenabschnitten muss abgebremst werden.
 \subsection{Laufzeit}
-	Die Laufzeit ist allein abhängig von der Länge n der Strecke, da für jeden Streckenabschnitt die gleichen Operationen ausgeführt werden müssen. Laufzeitkomplexität: \(\mathcal O(n)\)
+	Die Laufzeit beträgt Worst-Case, der befahrbahren Strecke \(\mathcal O(n)\), da die gesamte Strecke durchlaufen werden muss.
+	
+	Falls während des Ablaufens der Strecke festgestellt wird, dass selbst bei maximaler Geschwindigkeit diese Stelle mit einer negativen Geschwindigkeit erreicht werden würde, kann der Programmablauf abgebrochen werden. Die Laufzeit beträgt dann \(\mathcal O(n-m)\). \(m\) ist die Entfernung, nach der die erste Stelle mit negativer Geschwindigkeit erreicht wird.
+	
+	Im Best-Case, einer Steigung im ersten Feld, kann der Programmablauf dementsprechend sofort abgebrochen werden. Dann beträgt die Laufzeit \(\mathcal O(1)\).
+	
+	In der Praxis ist die Worst-Case-Laufzeit relevant, da hauptsächlich funktionierende Strecken berechnet werden sollen. 
